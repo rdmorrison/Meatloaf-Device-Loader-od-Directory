@@ -1,0 +1,83 @@
+COMMODORE 64 BASIC PROGRAM - TOKENIZED VERSION
+==============================================
+
+When a C64 loads "99.prg", here's what the BASIC program looks like:
+
+10 REM ON DECK GAMES
+20 REM CLEAR SCREEN
+30 PRINT "ON DECK GAMES"
+40 PRINT
+50 PRINT " 1. 4THANDINCHES       "
+60 PRINT " 2. BEACH-HEAD_II      "
+70 PRINT " 3. BEACHHEAD          "
+80 PRINT " 4. DEFENDER64         "
+90 PRINT " 5. DIGDUG             "
+100 PRINT " 6. DKONGJUNIOR        "
+110 PRINT " 7. DKONGOCEAN         "
+120 PRINT " 8. GALAGA             "
+130 PRINT " 9. GHOSTBUSTERS       "
+140 PRINT "10. TAPPER             "
+150 PRINT "11. JUMPMANJUNIOR      "
+160 PRINT "12. DIGDUG             "
+170 PRINT "13. LEADERBOARD        "
+180 PRINT "14. MUSICPROCESSOR     "
+190 PRINT "15. PAC-LAND           "
+200 PRINT "16. 10THFRAME          "
+210 PRINT "17. PANZER             "
+220 PRINT
+230 PRINT "ENTER GAME NUMBER (1-17):";
+240 INPUT N
+250 IF N<1 OR N>17 THEN PRINT "INVALID NUMBER!" : GOTO 230
+260 ON N GOTO 270,300,330,360,390,420,450,480,510,540,570,600,630,660,690,720,750
+270 PRINT "LOADING 4THANDINCHES"
+280 LOAD "HTTP://RDEANM.COM/OD/1.PRG",8,1
+290 RUN
+300 PRINT "LOADING BEACH-HEAD_II"
+310 LOAD "HTTP://RDEANM.COM/OD/2.D64",8,1
+320 RUN
+330 PRINT "LOADING BEACHHEAD"
+340 LOAD "HTTP://RDEANM.COM/OD/3.PRG",8,1
+350 RUN
+... (continues for all 17 games)
+780 END
+
+TOKENIZED BYTES (HEXADECIMAL):
+=============================
+
+Memory starts at $0801 (2049 decimal)
+
+01 08        ; Load address
+0B 08        ; Next line address (line 10)
+0A 00        ; Line number 10
+8F 20 4F 4E 20 44 45 43 4B 20 47 41 4D 45 53 00 ; TOKEN_REM + " ON DECK GAMES" + NULL
+
+15 08        ; Next line address (line 20)  
+14 00        ; Line number 20
+8F 20 43 4C 45 41 52 20 53 43 52 45 45 4E 00 ; TOKEN_REM + " CLEAR SCREEN" + NULL
+
+2A 08        ; Next line address (line 30)
+1E 00        ; Line number 30
+99 22 4F 4E 20 44 45 43 4B 20 47 41 4D 45 53 22 00 ; TOKEN_PRINT + "ON DECK GAMES" + NULL
+
+31 08        ; Next line address (line 40)
+28 00        ; Line number 40
+99 00        ; TOKEN_PRINT + NULL
+
+... (pattern continues for each line)
+
+TOKENS USED:
+============
+TOKEN_REM    = 0x8F (143)
+TOKEN_PRINT  = 0x99 (153)
+TOKEN_INPUT  = 0x85 (133)
+TOKEN_IF     = 0x8B (139)
+TOKEN_THEN   = 0xA7 (167)
+TOKEN_OR     = 0xB0 (176)
+TOKEN_GOTO   = 0x89 (137)
+TOKEN_ON     = 0x91 (145)
+TOKEN_LOAD   = 0x93 (147)
+TOKEN_RUN    = 0x9A (154)
+TOKEN_END    = 0x83 (131)
+
+The program ends with:
+00 00        ; End of program marker
