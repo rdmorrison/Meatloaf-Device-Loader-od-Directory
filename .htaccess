@@ -1,0 +1,10 @@
+# Enable URL rewriting
+RewriteEngine On
+RewriteOptions inherit
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Handle od/ directory aliases (add this before other rules)
+RewriteRule ^od/([0-9]+)\.prg$ od/lookup.php?id=$1 [L]
