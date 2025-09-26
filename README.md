@@ -1,3 +1,5 @@
+# Props - This is "my" server sotfware as I tinker withe the MEatloaf by https://github.com/idolpx  https://github.com/idolpx/meatloaf I am just writiting add on software for me.. 
+
 # Meatloaf-Device-Loader-od-Directory
 This repository powers the Meatloaf device—a multi-device emulator for the Commodore 64/128—by serving dynamically generated .prg files over HTTP. It uses PHP to construct tokenized BASIC programs compatible with C64 memory layout and Meatloaf's loading conventions.
 
@@ -113,7 +115,7 @@ The loader uses:
 // Copyright (C) 2022 James Johnston
 ```
 
-Special thanks to James Johnston for creating the amazing Meatloaf device that makes this modern C64 networking possible!
+Special thanks to (https://github.com/idolpx/meatloaf) for creating the amazing Meatloaf device that makes this modern C64 networking possible!
 
 ## 📝 License
 
