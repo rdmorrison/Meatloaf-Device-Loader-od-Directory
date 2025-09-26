@@ -14,7 +14,7 @@ The loader responds to specific HTTP requests from the C64 using Meatloaf's `LOA
 
 ### 🔹 Load Game Listing
 ```basic
-LOAD"ML:OD"
+LOAD"ML:OD",8
 ```
 
 This shortcode triggers a request to:
