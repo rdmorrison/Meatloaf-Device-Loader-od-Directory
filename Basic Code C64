@@ -1,0 +1,78 @@
+10 rem on deck games
+20 rem clear screen
+30 print "on deck games"
+40 print
+50 print " 1. 4thandinches      "
+60 print " 2. beachheadii       "
+70 print " 3. beachhead         "
+80 print " 4. defender64        "
+90 print " 5. digdug            "
+100 print " 6. dkongjunior       "
+110 print " 7. dkongocean        "
+120 print " 8. galaga            "
+130 print " 9. ghostbusters      "
+140 print "10. tapper            "
+150 print "11. jumpmanjunior    "
+160 print "12. barbie         "
+170 print "13. leaderboard      "
+180 print "14. musicprocessor   "
+190 print "15. pac-land         "
+200 print "16. 10thframe        "
+210 print "17. panzer           "
+220 print
+230 print "enter game number (1-17):";
+240 input n
+250 if n<1 or n>17 then print "invalid number!" : goto 230
+260 on n goto 270,300,330,360,390,420,450,480,510,540,570,600,630,660,690,720,750
+270 print "loading 4thandinches"
+280 load "http://rdeanm.com/od/1.prg",8,1
+290 run
+300 print "loading beachheadii"
+310 load "http://rdeanm.com/od/2.d64",8,1
+320 run
+330 print "loading beachhead"
+340 load "http://rdeanm.com/od/3.prg",8,1
+350 run
+360 print "loading defender64"
+370 load "http://rdeanm.com/od/4.prg",8,1
+380 run
+390 print "loading digdug"
+400 load "http://rdeanm.com/od/5.prg",8,1
+410 run
+420 print "loading dkongjunior"
+430 load "http://rdeanm.com/od/6.prg",8,1
+440 run
+450 print "loading dkongocean"
+460 load "http://rdeanm.com/od/7.prg",8,1
+470 run
+480 print "loading galaga"
+490 load "http://rdeanm.com/od/8.prg",8,1
+500 run
+510 print "loading ghostbusters"
+520 load "http://rdeanm.com/od/9.prg",8,1
+530 run
+540 print "loading tapper"
+550 load "http://rdeanm.com/od/10.prg",8,1
+560 run
+570 print "loading jumpmanjunior"
+580 load "http://rdeanm.com/od/11.prg",8,1
+590 run
+600 print "loading barbie"
+610 load "http://rdeanm.com/od/12.prg",8,1
+620 run
+630 print "loading leaderboard"
+640 load "http://rdeanm.com/od/13.prg",8,1
+650 run
+660 print "loading musicprocessor"
+670 load "http://rdeanm.com/od/14.d64",8,1
+680 run
+690 print "loading pac-land"
+700 load "http://rdeanm.com/od/15.prg",8,1
+710 run
+720 print "loading 1othframe"
+730 load "http://rdeanm.com/od/16.prg",8,1
+740 run
+750 print "loading panzer"
+760 load "http://rdeanm.com/od/17.prg",8,1
+770 run
+780 end
