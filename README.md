@@ -1,11 +1,12 @@
-# Props - This is "my" server sotfware as I tinker withe the MEatloaf by https://github.com/idolpx  https://github.com/idolpx/meatloaf I am just writiting add on software for me.. 
+# Props - 
+This is "my" server softfware as I tinker with the Meatloaf by https://github.com/idolpx  https://github.com/idolpx/meatloaf I am just writiting add on software for me....  
 
 # Meatloaf-Device-Loader-od-Directory
 This repository powers the Meatloaf device—a multi-device emulator for the Commodore 64/128—by serving dynamically generated .prg files over HTTP. It uses PHP to construct tokenized BASIC programs compatible with C64 memory layout and Meatloaf's loading conventions.
 
 #  Meatloaf Game Loader for Commodore 64
 
-This project provides a dynamic PHP-based loader for the **Meatloaf multi-device emulator** by James Johnston. It serves `.prg` and `.d64` files over HTTP, allowing Commodore 64 users to load games directly via Meatloaf's network interface.
+This project provides a dynamic PHP-based loader for the **Meatloaf multi-device emulator** by idolpx. It serves `.prg` and `.d64` files over HTTP, allowing Commodore 64 users to load games directly via Meatloaf's network interface.
 
 ## 📡 How It Works
 
